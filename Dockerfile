@@ -1,4 +1,4 @@
-FROM php:5-alpine
+FROM php:7-alpine
 LABEL maintainer="Filipe <www@filipeandre.com>"
 
 RUN apk update && \
