@@ -25,7 +25,6 @@ NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) \
 && docker-php-ext-enable redis imagick \
 \
 && docker-php-ext-install -j${NPROC} \
-  mcrypt \
   pdo \
   pdo_mysql \
   pdo_sqlite \
