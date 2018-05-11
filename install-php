@@ -26,10 +26,6 @@ NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) \
 \
 && docker-php-ext-install -j${NPROC} \
   mcrypt \
-  iconv \
-  curl \
-  iconv \
-  mbstring \
   pdo \
   pdo_mysql \
   pdo_sqlite \
