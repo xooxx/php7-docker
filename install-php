@@ -46,5 +46,6 @@ NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) \
 \
 && curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer \
 && chmod +x /usr/local/bin/composer \
+&& echo "memory_limit = 4G;" > /usr/local/etc/php/php.ini \
 \
 && apk del -f .build-deps
